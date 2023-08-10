@@ -18,4 +18,3 @@ class ContactInformation(Base):
     address_id = Column(UUID(as_uuid=True), ForeignKey('public.addresses.id'), nullable=True)
 
     patient = relationship("Patient", back_populates="contact_information")
-    address = relationship("Address")

@@ -17,3 +17,4 @@ class Patient(Base):
     insurances = relationship("Insurance", back_populates="patient")
     referrals = relationship("Referral", back_populates="patient")
     appointments = relationship("Appointment", back_populates="patient")
+    contact_information = relationship("ContactInformation", back_populates="patient") 
